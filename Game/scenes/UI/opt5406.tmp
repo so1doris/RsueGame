@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://loqt7eu7eps1"]
+
+[ext_resource type="FontFile" uid="uid://bmoyc30ofk7bc" path="res://Sprites/Fifaks 1.0 dev1/Fifaks10Dev1.ttf" id="1_ahyh3"]
+[ext_resource type="Script" path="res://scenes/UI/options.gd" id="1_t1swf"]
+[ext_resource type="Texture2D" uid="uid://5ixfawrkvs88" path="res://Sprites/MainMenu/Exit.png" id="2_tlars"]
+[ext_resource type="PackedScene" uid="uid://bqp2twep0dmvq" path="res://scenes/UI/settings_tab_container.tscn" id="3_c1fe4"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t1swf")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_direction = 2
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_ahyh3")
+theme_override_font_sizes/font_size = 120
+text = "Настройки"
+
+[node name="Settings_Tab_Container" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_c1fe4")]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+
+[node name="Выход из меню" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 896.0
+offset_top = 976.0
+offset_right = 1406.0
+offset_bottom = 1176.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 8
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.87
+texture_normal = ExtResource("2_tlars")

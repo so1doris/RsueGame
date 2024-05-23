@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cppmjrejnikfh"]
+[gd_scene load_steps=8 format=3 uid="uid://cppmjrejnikfh"]
 
 [ext_resource type="Script" path="res://scenes/UI/main_manu.gd" id="1_jljjv"]
 [ext_resource type="Texture2D" uid="uid://dfmipibwjewrv" path="res://Sprites/MainMenu/Bagground.jpeg" id="2_e73rv"]
@@ -7,19 +7,22 @@
 [ext_resource type="Texture2D" uid="uid://fiagdyyym6rh" path="res://Sprites/MainMenu/Прдолжить.png" id="5_se6u5"]
 [ext_resource type="Texture2D" uid="uid://04e2hvawuxvu" path="res://Sprites/MainMenu/Settings.png" id="6_6dhur"]
 [ext_resource type="Texture2D" uid="uid://5ixfawrkvs88" path="res://Sprites/MainMenu/Exit.png" id="7_drefi"]
-[ext_resource type="PackedScene" uid="uid://loqt7eu7eps1" path="res://scenes/UI/options.tscn" id="8_gaqpp"]
 
 [node name="MainManu" type="Control"]
+clip_contents = true
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.667
+anchor_bottom = 1.676
+offset_right = -0.384033
+offset_bottom = -6.0481
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
 script = ExtResource("1_jljjv")
 
 [node name="Фон" type="TextureRect" parent="."]
 y_sort_enabled = true
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,14 +35,14 @@ expand_mode = 1
 [node name="Кнопки" type="VBoxContainer" parent="."]
 clip_contents = true
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_left = -415.0
+offset_right = 415.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.6, 0.6)
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_constants/separation = 32
@@ -64,7 +67,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("4_1rff6")
 texture_pressed = ExtResource("4_1rff6")
-stretch_mode = 0
 
 [node name="Продолжить" type="TextureButton" parent="Кнопки"]
 clip_contents = true
@@ -72,7 +74,6 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("5_se6u5")
-stretch_mode = 0
 
 [node name="Настройки" type="TextureButton" parent="Кнопки"]
 clip_contents = true
@@ -80,7 +81,6 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("6_6dhur")
-stretch_mode = 0
 
 [node name="Выход" type="TextureButton" parent="Кнопки"]
 clip_contents = true
@@ -88,9 +88,3 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("7_drefi")
-stretch_mode = 0
-
-[node name="Options" parent="." instance=ExtResource("8_gaqpp")]
-visible = false
-clip_contents = true
-layout_mode = 1
