@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="RsueGame"
+run/main_scene="res://Сharacters/Серов.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_nodes/plugin.cfg")
 
 [rendering]
 
