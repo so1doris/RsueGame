@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://clp5whdq6wvh4"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_7gvbm"]
+
+[resource]
+script = ExtResource("1_7gvbm")
+question_info = "Выберите триколор цветов в компьютере"
+type = 0
+options = Array[String](["Белый, синий, красный", "Зеленый, черный, белый", "Красный, зеленый, синий", "Черный, белый, розовый"])
+correct = "Красный, зеленый, синий"
