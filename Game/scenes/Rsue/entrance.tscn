@@ -50,4 +50,4 @@ position = Vector2(34.25, 518)
 shape = SubResource("RectangleShape2D_erjf0")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_3fxka")]
-position = Vector2(403, 263)
+position = Vector2(499, 259)

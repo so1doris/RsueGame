@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://dnf1pehbqapoo"]
 
-[ext_resource type="Texture2D" uid="uid://cqcb0wnwu4ev7" path="res://icon.svg" id="1_d2bsp"]
-[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_clc4h"]
-[ext_resource type="PackedScene" uid="uid://c7epwy41ehfwe" path="res://Scenes/Move_to_scen/to_2_floor.tscn" id="3_jot2s"]
+[ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_d2bsp"]
+[ext_resource type="PackedScene" uid="uid://c7epwy41ehfwe" path="res://scenes/Rsue/Move_to_scen/to_2_floor.tscn" id="3_jot2s"]
+[ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_ncnuw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vnord"]
 size = Vector2(20, 1082)
@@ -59,9 +59,6 @@ texture = ExtResource("1_d2bsp")
 position = Vector2(1046, 795)
 texture = ExtResource("1_d2bsp")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_clc4h")]
-position = Vector2(124, -78)
-
 [node name="to_2floor" parent="." instance=ExtResource("3_jot2s")]
 collision_mask = 2
 
@@ -74,3 +71,6 @@ offset_bottom = 303.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="to_2floor"]
 position = Vector2(53, 158)
 shape = SubResource("RectangleShape2D_foaj1")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_ncnuw")]
+position = Vector2(292, 115)

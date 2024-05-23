@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://d208dtvt5g0f5"]
 
-[ext_resource type="Texture2D" uid="uid://cqcb0wnwu4ev7" path="res://icon.svg" id="1_xavwf"]
-[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_l5l0o"]
+[ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_xavwf"]
+[ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="2_uhjks"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6j8gf"]
 size = Vector2(20, 1082)
@@ -62,5 +62,5 @@ texture = ExtResource("1_xavwf")
 position = Vector2(1756, 655)
 texture = ExtResource("1_xavwf")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_l5l0o")]
-position = Vector2(1479, -190)
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_uhjks")]
+position = Vector2(1668, 68)

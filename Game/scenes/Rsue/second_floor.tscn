@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://br15r73mrmeea"]
 
-[ext_resource type="Texture2D" uid="uid://cqcb0wnwu4ev7" path="res://icon.svg" id="1_tg82l"]
-[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_6sej1"]
-[ext_resource type="PackedScene" uid="uid://3auw1mjng6ky" path="res://Scenes/Move_to_scen/to_ciber_light.tscn" id="3_x4si4"]
+[ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_tg82l"]
+[ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_sn5c1"]
+[ext_resource type="PackedScene" uid="uid://3auw1mjng6ky" path="res://scenes/Rsue/Move_to_scen/to_ciber_light.tscn" id="3_x4si4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5eohu"]
 size = Vector2(20, 1082)
@@ -45,9 +45,6 @@ texture = ExtResource("1_tg82l")
 position = Vector2(861, 909)
 texture = ExtResource("1_tg82l")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_6sej1")]
-position = Vector2(285, 197)
-
 [node name="to_CiberLight" parent="." instance=ExtResource("3_x4si4")]
 position = Vector2(3, 387)
 
@@ -60,3 +57,6 @@ offset_bottom = 303.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="to_CiberLight"]
 position = Vector2(53, 156)
 shape = SubResource("RectangleShape2D_ergd1")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_sn5c1")]
+position = Vector2(426, 508)

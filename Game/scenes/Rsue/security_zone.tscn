@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://b6t3r2ichij1e"]
 
-[ext_resource type="Texture2D" uid="uid://cqcb0wnwu4ev7" path="res://icon.svg" id="1_pmqvv"]
-[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_of63q"]
-[ext_resource type="PackedScene" uid="uid://ddjpunpf4an6b" path="res://Scenes/Move_to_scen/to_marbl_hall.tscn" id="3_ogbh0"]
+[ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_pmqvv"]
+[ext_resource type="PackedScene" uid="uid://ddjpunpf4an6b" path="res://scenes/Rsue/Move_to_scen/to_marbl_hall.tscn" id="3_ogbh0"]
+[ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_rfdgg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xmq36"]
 size = Vector2(20, 1080)
@@ -55,9 +55,6 @@ shape = SubResource("RectangleShape2D_m54gx")
 position = Vector2(1494, 199)
 texture = ExtResource("1_pmqvv")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_of63q")]
-position = Vector2(409, -191)
-
 [node name="to_Marbl_hall" parent="." instance=ExtResource("3_ogbh0")]
 
 [node name="ColorRect" type="ColorRect" parent="to_Marbl_hall"]
@@ -69,3 +66,6 @@ offset_bottom = 347.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="to_Marbl_hall"]
 position = Vector2(52, 181)
 shape = SubResource("RectangleShape2D_bb3gl")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_rfdgg")]
+position = Vector2(231, 112)
