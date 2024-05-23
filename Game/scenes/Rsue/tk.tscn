@@ -74,3 +74,11 @@ shape = SubResource("RectangleShape2D_foaj1")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_ncnuw")]
 position = Vector2(292, 115)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 104.0
+offset_top = 16.0
+offset_right = 406.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 40
+text = "Точка кипения"

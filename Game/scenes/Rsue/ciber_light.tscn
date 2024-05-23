@@ -64,3 +64,11 @@ texture = ExtResource("1_xavwf")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_uhjks")]
 position = Vector2(1668, 68)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 24.0
+offset_right = 291.0
+offset_bottom = 79.0
+theme_override_font_sizes/font_size = 40
+text = "Кибер клуб"

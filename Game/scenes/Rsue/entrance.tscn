@@ -51,3 +51,11 @@ shape = SubResource("RectangleShape2D_erjf0")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_3fxka")]
 position = Vector2(499, 259)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 22.0
+offset_right = 423.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 40
+text = "Вход в РИНХ"

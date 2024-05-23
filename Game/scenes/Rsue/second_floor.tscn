@@ -60,3 +60,11 @@ shape = SubResource("RectangleShape2D_ergd1")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_sn5c1")]
 position = Vector2(426, 508)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 603.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 40
+text = "Коридор второго этажа"

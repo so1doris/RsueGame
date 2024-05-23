@@ -69,3 +69,11 @@ shape = SubResource("RectangleShape2D_bb3gl")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_rfdgg")]
 position = Vector2(231, 112)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 110.0
+offset_top = 20.0
+offset_right = 568.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 40
+text = "Турникет и охранники"
