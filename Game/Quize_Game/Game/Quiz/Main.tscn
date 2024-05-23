@@ -1,0 +1,305 @@
+[gd_scene load_steps=13 format=3 uid="uid://cx6qxctugtl8d"]
+
+[ext_resource type="Script" path="res://Scripts/controller/game_controller.gd" id="1_j5j8p"]
+[ext_resource type="Resource" uid="uid://wbvxhjr01qv4" path="res://Resources/varied/theme_varied.tres" id="2_0kqyp"]
+[ext_resource type="FontFile" uid="uid://svbsay6cx5dy" path="res://Assets/agat-8.ttf" id="3_4ogeh"]
+[ext_resource type="AudioStream" uid="uid://j4o0wbal8yeu" path="res://Assets/Sounds/correcto-tinki.mp3" id="4_76xf1"]
+[ext_resource type="AudioStream" uid="uid://bd63eohgs1c6i" path="res://Assets/Sounds/windows-xp-critical-error-full-version.mp3" id="5_lsjmu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ge7vi"]
+content_margin_top = 16.0
+bg_color = Color(0.239107, 0.324135, 0.305602, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37e7c"]
+bg_color = Color(0.239216, 0.32549, 0.305882, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+expand_margin_top = 16.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_421gd"]
+font = ExtResource("3_4ogeh")
+font_size = 100
+font_color = Color(0.186449, 0.735882, 0.516274, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbyg4"]
+content_margin_top = 16.0
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.276464, 0.726443, 0.523281, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2tiwc"]
+content_margin_top = 16.0
+bg_color = Color(0.56873, 0.718919, 0.558102, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l7vdh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 4
+border_width_right = 5
+border_width_bottom = 4
+border_color = Color(0, 0.951364, 0.680272, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6rc6t"]
+bg_color = Color(0, 0.853109, 0.608484, 1)
+border_width_left = 5
+border_width_top = 4
+border_width_right = 5
+border_width_bottom = 4
+border_color = Color(0, 0.951364, 0.680272, 1)
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource("1_j5j8p")
+quiz = ExtResource("2_0kqyp")
+color_right = Color(6.20887e-06, 0.721408, 0.221279, 1)
+color_wrong = Color(0.842635, 3.56168e-06, 4.81307e-07, 1)
+
+[node name="Content" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.538567, 0.659112, 0.644354, 1)
+
+[node name="QuestionInfo" type="VBoxContainer" parent="Content"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 133.0
+grow_horizontal = 2
+
+[node name="QuestionText" type="Label" parent="Content/QuestionInfo"]
+custom_minimum_size = Vector2(1150, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 43
+text = "
+Some text(Question)
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Answers" type="VBoxContainer" parent="Content"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.089
+anchor_top = 0.235
+anchor_right = 0.906
+anchor_bottom = 1.0
+offset_left = 0.472
+offset_top = -0.280014
+offset_right = 5.28796
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="Content/Answers"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
+
+[node name="Button2" type="Button" parent="Content/Answers"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
+
+[node name="Button3" type="Button" parent="Content/Answers"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
+
+[node name="Button4" type="Button" parent="Content/Answers"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
+
+[node name="GameOver" type="ColorRect" parent="Content"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.839216, 0.898039, 0.890196, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/GameOver"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -258.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 150
+
+[node name="Title" type="Label" parent="Content/GameOver/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 50
+text = "Тест завершен."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="minTitle" type="Label" parent="Content/GameOver/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 50
+text = "Ваш Балл"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Content/GameOver"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.665
+anchor_right = 1.0
+anchor_bottom = 0.843
+offset_left = 1.0
+offset_top = -39.92
+offset_right = 2.0
+offset_bottom = -56.264
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Score" type="Label" parent="Content/GameOver"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.665123
+anchor_right = 1.0
+anchor_bottom = 0.848445
+offset_left = 2.0
+offset_top = -40.0
+offset_right = 2.0
+offset_bottom = -39.7921
+grow_horizontal = 2
+label_settings = SubResource("LabelSettings_421gd")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Restart" type="Button" parent="Content/GameOver"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.858
+anchor_right = 0.789
+anchor_bottom = 0.985
+offset_left = -2.40001
+offset_top = -9.98401
+offset_right = 0.0719604
+offset_bottom = -0.280029
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qbyg4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2tiwc")
+text = "Выход"
+
+[node name="StartScreen" type="ColorRect" parent="Content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.839216, 0.898039, 0.890196, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/StartScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 60
+
+[node name="Label" type="Label" parent="Content/StartScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 35
+text = "
+
+
+Дорогой абитуриент, тебе предлагается пройти веселый Квиз! 
+Будет 10 вопросов, в каждом 4 варианта ответа,
+и только один из них будет правильный.
+
+
+
+
+
+Если ты готов, то мы начинаем! 
+
+
+"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Content/StartScreen/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 400
+theme_override_constants/margin_right = 400
+
+[node name="Start" type="Button" parent="Content/StartScreen/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_l7vdh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6rc6t")
+text = "начать"
+
+[node name="AudioCorrect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_76xf1")
+
+[node name="AudioWrong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lsjmu")
+volume_db = -9.157
+
+[connection signal="pressed" from="Content/GameOver/Restart" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Content/StartScreen/VBoxContainer/MarginContainer/Start" to="." method="_on_start_pressed"]

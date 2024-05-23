@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddjpunpf4an6b"]
+
+[ext_resource type="Script" path="res://Scripts/Move_to/to_Marbl_hall.gd" id="1_i54j3"]
+
+[node name="to_Marbl_hall" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_i54j3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

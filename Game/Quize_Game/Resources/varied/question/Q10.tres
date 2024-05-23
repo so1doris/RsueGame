@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dtjy32w86jnne"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_w8mwh"]
+
+[resource]
+script = ExtResource("1_w8mwh")
+question_info = "Сколько поисковых запросов получает Google в секунду?"
+type = 0
+options = Array[String](["100 000", "50 000", "20 000", "200 000"])
+correct = "100 000"

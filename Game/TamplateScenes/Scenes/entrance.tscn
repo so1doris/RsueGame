@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7geayw8q24g7"]
+
+[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_pqbh8"]
+[ext_resource type="PackedScene" uid="uid://csqg413r6v4gd" path="res://Scenes/Move_to_scen/to_security.tscn" id="3_cvgoj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnm4"]
+size = Vector2(20, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gifaj"]
+size = Vector2(1928.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b64tc"]
+size = Vector2(1920, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erjf0"]
+size = Vector2(95.5, 258)
+
+[node name="enterence" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_pqbh8")]
+position = Vector2(185, 199)
+
+[node name="Border" type="StaticBody2D" parent="."]
+position = Vector2(0, 3)
+
+[node name="Left" type="CollisionShape2D" parent="Border"]
+position = Vector2(1.5, 533)
+shape = SubResource("RectangleShape2D_cvnm4")
+
+[node name="Right" type="CollisionShape2D" parent="Border"]
+position = Vector2(1712, 533)
+shape = SubResource("RectangleShape2D_cvnm4")
+
+[node name="Top" type="CollisionShape2D" parent="Border"]
+position = Vector2(965.75, -5)
+shape = SubResource("RectangleShape2D_gifaj")
+
+[node name="Bottom" type="CollisionShape2D" parent="Border"]
+position = Vector2(957, 1071)
+shape = SubResource("RectangleShape2D_b64tc")
+
+[node name="New_scen" parent="." instance=ExtResource("3_cvgoj")]
+
+[node name="ColorRect" type="ColorRect" parent="New_scen"]
+offset_left = 4.0
+offset_top = 370.0
+offset_right = 82.0
+offset_bottom = 670.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="New_scen"]
+position = Vector2(34.25, 518)
+shape = SubResource("RectangleShape2D_erjf0")
