@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://07ad2tlfxx46"]
-
-[ext_resource type="Script" path="res://Scripts/Move_to/to_tk.gd" id="1_xsxg4"]
-
-[node name="to_TK" type="Area2D"]
-collision_mask = 2
-script = ExtResource("1_xsxg4")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
