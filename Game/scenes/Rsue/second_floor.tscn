@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://br15r73mrmeea"]
+[gd_scene load_steps=8 format=3 uid="uid://pljodsg10ql2"]
 
 [ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_tg82l"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_sn5c1"]

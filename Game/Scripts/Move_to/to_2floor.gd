@@ -1,6 +1,6 @@
 extends Area2D
 
-var second_floor = preload("res://scenes/Rsue/second_floor.tscn") 
+var to_CiberLight= preload("res://scenes/Rsue/ciber_light.tscn") 
 
 func _on_body_entered(body):
-	get_tree().change_scene_to_packed(second_floor)
+	get_tree().change_scene_to_packed(to_CiberLight)

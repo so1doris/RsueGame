@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bd63eohgs1c6i"
-path="res://.godot/imported/windows-xp-critical-error-full-version.mp3-29700c80c036eafe18561b0ba8d14455.mp3str"
+path="res://.godot/imported/windows-xp-critical-error-full-version.mp3-7b1a034c094649e04bd4a062462066e0.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sounds/windows-xp-critical-error-full-version.mp3"
-dest_files=["res://.godot/imported/windows-xp-critical-error-full-version.mp3-29700c80c036eafe18561b0ba8d14455.mp3str"]
+source_file="res://MiniQuiz/Assets/Sounds/windows-xp-critical-error-full-version.mp3"
+dest_files=["res://.godot/imported/windows-xp-critical-error-full-version.mp3-7b1a034c094649e04bd4a062462066e0.mp3str"]
 
 [params]
 

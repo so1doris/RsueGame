@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://j4o0wbal8yeu"
-path="res://.godot/imported/correcto-tinki.mp3-e26baec19ee3ba40fa4eff0065953f76.mp3str"
+path="res://.godot/imported/correcto-tinki.mp3-d1ccae040c53c9e9711a3b3b58c214d6.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sounds/correcto-tinki.mp3"
-dest_files=["res://.godot/imported/correcto-tinki.mp3-e26baec19ee3ba40fa4eff0065953f76.mp3str"]
+source_file="res://MiniQuiz/Assets/Sounds/correcto-tinki.mp3"
+dest_files=["res://.godot/imported/correcto-tinki.mp3-d1ccae040c53c9e9711a3b3b58c214d6.mp3str"]
 
 [params]
 
