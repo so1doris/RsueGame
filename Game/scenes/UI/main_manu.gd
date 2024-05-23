@@ -8,7 +8,7 @@ extends Control
 @onready var Options = $Options as OptionsMenu
 @onready var ButCont = $"Кнопки" as VBoxContainer
 
-@onready var start_level = preload("res://Сharacters/Exit.tscn") as PackedScene
+@onready var start_level = preload("res://scenes/Rsue/entrance.tscn") as PackedScene
 func _ready():
 	handle_cont()
 
