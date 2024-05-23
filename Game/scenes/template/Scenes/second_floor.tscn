@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3 uid="uid://br15r73mrmeea"]
+
+[ext_resource type="Texture2D" uid="uid://cqcb0wnwu4ev7" path="res://icon.svg" id="1_tg82l"]
+[ext_resource type="PackedScene" uid="uid://dcuj18slc25cf" path="res://Scenes/character_body_2d.tscn" id="2_6sej1"]
+[ext_resource type="PackedScene" uid="uid://3auw1mjng6ky" path="res://Scenes/Move_to_scen/to_ciber_light.tscn" id="3_x4si4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5eohu"]
+size = Vector2(20, 1082)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cw63y"]
+size = Vector2(1920, 240)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10sd4"]
+size = Vector2(1920, 240)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ergd1"]
+size = Vector2(95.5, 300)
+
+[node name="Second_floor" type="Node2D"]
+
+[node name="Border" type="StaticBody2D" parent="."]
+position = Vector2(0, 3)
+
+[node name="Left" type="CollisionShape2D" parent="Border"]
+position = Vector2(1.5, 533)
+shape = SubResource("RectangleShape2D_5eohu")
+
+[node name="Right" type="CollisionShape2D" parent="Border"]
+position = Vector2(1923, 534)
+shape = SubResource("RectangleShape2D_5eohu")
+
+[node name="Top" type="CollisionShape2D" parent="Border"]
+position = Vector2(962, 114)
+shape = SubResource("RectangleShape2D_cw63y")
+
+[node name="Bottom" type="CollisionShape2D" parent="Border"]
+position = Vector2(958, 954)
+shape = SubResource("RectangleShape2D_10sd4")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(834, 156)
+texture = ExtResource("1_tg82l")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(861, 909)
+texture = ExtResource("1_tg82l")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_6sej1")]
+position = Vector2(285, 197)
+
+[node name="to_CiberLight" parent="." instance=ExtResource("3_x4si4")]
+position = Vector2(3, 387)
+
+[node name="ColorRect" type="ColorRect" parent="to_CiberLight"]
+offset_left = 16.0
+offset_top = 3.0
+offset_right = 94.0
+offset_bottom = 303.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="to_CiberLight"]
+position = Vector2(53, 156)
+shape = SubResource("RectangleShape2D_ergd1")
