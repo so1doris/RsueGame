@@ -1,5 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b7geayw8q24g7"]
 
+[ext_resource type="Texture2D" uid="uid://ca4dohuo11t0h" path="res://Sprites/Location/Ulica.png" id="1_boxma"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="2_3fxka"]
 [ext_resource type="PackedScene" uid="uid://csqg413r6v4gd" path="res://scenes/Rsue/Move_to_scen/to_security.tscn" id="3_cvgoj"]
 
@@ -12,10 +13,12 @@ size = Vector2(1928.5, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b64tc"]
 size = Vector2(1920, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_erjf0"]
-size = Vector2(95.5, 258)
-
 [node name="enterence" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(956, 538)
+scale = Vector2(3.78125, 3.72222)
+texture = ExtResource("1_boxma")
 
 [node name="Border" type="StaticBody2D" parent="."]
 position = Vector2(0, 3)
@@ -26,7 +29,7 @@ position = Vector2(1.5, 533)
 shape = SubResource("RectangleShape2D_cvnm4")
 
 [node name="Right" type="CollisionShape2D" parent="Border"]
-position = Vector2(1712, 533)
+position = Vector2(1633, 533)
 shape = SubResource("RectangleShape2D_cvnm4")
 
 [node name="Top" type="CollisionShape2D" parent="Border"]
@@ -37,22 +40,20 @@ shape = SubResource("RectangleShape2D_gifaj")
 position = Vector2(957, 1071)
 shape = SubResource("RectangleShape2D_b64tc")
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Border"]
+polygon = PackedVector2Array(656, -26, 434, 424, 345, 383, 216, 614, 316, 652, 93, 1055, -75, 1064, -160, -12)
+
 [node name="New_scen" parent="." instance=ExtResource("3_cvgoj")]
 
-[node name="ColorRect" type="ColorRect" parent="New_scen"]
-offset_left = 4.0
-offset_top = 370.0
-offset_right = 82.0
-offset_bottom = 670.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="New_scen"]
-position = Vector2(34.25, 518)
-shape = SubResource("RectangleShape2D_erjf0")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="New_scen"]
+polygon = PackedVector2Array(340, 392, 572, 496, 463, 708, 216, 620)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_3fxka")]
-position = Vector2(499, 259)
+position = Vector2(966, 335)
+scale = Vector2(4, 4)
 
 [node name="Label" type="Label" parent="."]
+visible = false
 offset_left = 40.0
 offset_top = 22.0
 offset_right = 423.0
