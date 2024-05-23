@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://des5dnpsqjkwy"]
 
-[ext_resource type="Script" path="res://Сharacters/Серов.gd" id="1_4krvr"]
+[ext_resource type="Script" path="res://Character_control.gd" id="1_gmvnq"]
 [ext_resource type="Texture2D" uid="uid://dtanpppex0gdk" path="res://Sprites/Серов/Sprite-0002.png" id="1_ql8eq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sovrj"]
@@ -10,7 +10,7 @@ height = 80.0
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(327, 108)
 disable_mode = 1
-script = ExtResource("1_4krvr")
+script = ExtResource("1_gmvnq")
 
 [node name="Sprite-0002" type="Sprite2D" parent="."]
 texture_filter = 3
