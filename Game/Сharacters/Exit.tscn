@@ -9,28 +9,13 @@ size = Vector2(35, 632)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3vwe"]
 size = Vector2(1159, 2)
 
-[node name="Node2D" type="Node2D"]
+[node name="RsueGame" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(1149, 329)
+[node name="Game" type="Node2D" parent="."]
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, -12)
-shape = SubResource("RectangleShape2D_w00ai")
+[node name="Улица" type="Node2D" parent="Game"]
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-566, 308)
-shape = SubResource("RectangleShape2D_h3vwe")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-578, -328)
-shape = SubResource("RectangleShape2D_h3vwe")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1149, -12)
-shape = SubResource("RectangleShape2D_w00ai")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="Game/Улица"]
 visible = false
 show_behind_parent = true
 position = Vector2(661, 375)
@@ -38,5 +23,24 @@ scale = Vector2(0.880956, 0.788095)
 texture = ExtResource("1_r80jq")
 region_enabled = true
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_ka3bp")]
+[node name="CharacterBody2D" parent="Game/Улица" instance=ExtResource("2_ka3bp")]
 position = Vector2(512, 552)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Game/Улица"]
+position = Vector2(1149, 329)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Game/Улица/StaticBody2D"]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_w00ai")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Game/Улица/StaticBody2D"]
+position = Vector2(-566, 308)
+shape = SubResource("RectangleShape2D_h3vwe")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Game/Улица/StaticBody2D"]
+position = Vector2(-578, -328)
+shape = SubResource("RectangleShape2D_h3vwe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Улица/StaticBody2D"]
+position = Vector2(-1149, -12)
+shape = SubResource("RectangleShape2D_w00ai")
