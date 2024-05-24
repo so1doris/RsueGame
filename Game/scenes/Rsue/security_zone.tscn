@@ -1,8 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://b6t3r2ichij1e"]
+[gd_scene load_steps=19 format=3 uid="uid://b6t3r2ichij1e"]
 
+[ext_resource type="Script" path="res://security_zone.gd" id="1_1g106"]
 [ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_pmqvv"]
 [ext_resource type="PackedScene" uid="uid://ddjpunpf4an6b" path="res://scenes/Rsue/Move_to_scen/to_marbl_hall.tscn" id="3_ogbh0"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_rfdgg"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="5_574e7"]
+[ext_resource type="Resource" uid="uid://oepylrh4ercs" path="res://dialogues/security_zone.tres" id="6_6u2sj"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="7_kql2m"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="8_yj23k"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="9_1qocf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xmq36"]
 size = Vector2(20, 1080)
@@ -22,7 +28,17 @@ size = Vector2(1393.5, 27)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bb3gl"]
 size = Vector2(95.5, 258)
 
+[sub_resource type="RichTextEffect" id="RichTextEffect_net75"]
+script = ExtResource("7_kql2m")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_4ytpu"]
+script = ExtResource("8_yj23k")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_x54tq"]
+script = ExtResource("9_1qocf")
+
 [node name="Security_zone" type="Node2D"]
+script = ExtResource("1_1g106")
 
 [node name="Border" type="StaticBody2D" parent="."]
 position = Vector2(0, 3)
@@ -77,3 +93,13 @@ offset_right = 568.0
 offset_bottom = 125.0
 theme_override_font_sizes/font_size = 40
 text = "Турникет и охранники"
+
+[node name="DialogueBox" type="Panel" parent="."]
+offset_left = 388.0
+offset_top = 731.0
+offset_right = 1449.0
+offset_bottom = 1055.0
+script = ExtResource("5_574e7")
+data = ExtResource("6_6u2sj")
+start_id = "security_start"
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_net75"), SubResource("RichTextEffect_4ytpu"), SubResource("RichTextEffect_x54tq")])

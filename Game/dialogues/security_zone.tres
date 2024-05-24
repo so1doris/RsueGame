@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://oepylrh4ercs"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_ti1sk"]
+
+[resource]
+script = ExtResource("1_ti1sk")
+starts = {
+"security_start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-15, 234),
+"start_id": "security_start"
+},
+"1_1": {
+"dialogue": "Вау, турникеты на входе! Чувствую себя как в каком-то секретном объекте. Надеюсь, паспорт не потребуется?",
+"offset": Vector2(311, 167),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Я"
+},
+"1_2": {
+"dialogue": "Нет, сегодня тут достаточно хорошего настроения!",
+"offset": Vector2(711, 257),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Отлично!"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+},
+"1_3": {
+"dialogue": "Хорошо. Думаю, первым делом стоит посетить мраморный зал. Пошли скорей",
+"offset": Vector2(1196, 252),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Иду!"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""
