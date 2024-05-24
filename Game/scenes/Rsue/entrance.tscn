@@ -1,8 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7geayw8q24g7"]
+[gd_scene load_steps=16 format=3 uid="uid://b7geayw8q24g7"]
 
 [ext_resource type="Texture2D" uid="uid://ca4dohuo11t0h" path="res://Sprites/Location/Ulica.png" id="1_boxma"]
+[ext_resource type="Script" path="res://entrance.gd" id="1_n2xth"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="2_3fxka"]
 [ext_resource type="PackedScene" uid="uid://csqg413r6v4gd" path="res://scenes/Rsue/Move_to_scen/to_security.tscn" id="3_cvgoj"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_v0too"]
+[ext_resource type="Resource" uid="uid://dyuj0lnfnwwq8" path="res://dialogues/entrance.tres" id="5_n72e8"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="6_4ym3r"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="7_fwh1k"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="8_6mfpb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnm4"]
 size = Vector2(20, 1080)
@@ -13,9 +19,19 @@ size = Vector2(1928.5, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b64tc"]
 size = Vector2(1920, 20)
 
-[node name="enterence" type="Node2D"]
+[sub_resource type="RichTextEffect" id="RichTextEffect_2camv"]
+script = ExtResource("6_4ym3r")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[sub_resource type="RichTextEffect" id="RichTextEffect_g7ynp"]
+script = ExtResource("7_fwh1k")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_a5c4y"]
+script = ExtResource("8_6mfpb")
+
+[node name="enterence" type="Node2D"]
+script = ExtResource("1_n2xth")
+
+[node name="Серов" type="Sprite2D" parent="."]
 position = Vector2(956, 538)
 scale = Vector2(3.78125, 3.72222)
 texture = ExtResource("1_boxma")
@@ -60,3 +76,14 @@ offset_right = 423.0
 offset_bottom = 124.0
 theme_override_font_sizes/font_size = 40
 text = "Вход в РИНХ"
+
+[node name="DialogueBox" type="Panel" parent="."]
+visible = false
+offset_left = 238.0
+offset_top = 771.0
+offset_right = 1645.0
+offset_bottom = 1069.0
+script = ExtResource("4_v0too")
+data = ExtResource("5_n72e8")
+start_id = "Entrance_start"
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_2camv"), SubResource("RichTextEffect_g7ynp"), SubResource("RichTextEffect_a5c4y")])
