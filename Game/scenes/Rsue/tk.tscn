@@ -1,8 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://dnf1pehbqapoo"]
+[gd_scene load_steps=19 format=3 uid="uid://dnf1pehbqapoo"]
 
+[ext_resource type="Script" path="res://tk.gd" id="1_3v8r2"]
 [ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_d2bsp"]
 [ext_resource type="PackedScene" uid="uid://c7epwy41ehfwe" path="res://scenes/Rsue/Move_to_scen/to_2_floor.tscn" id="3_jot2s"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_ncnuw"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_bm2cx"]
+[ext_resource type="Resource" uid="uid://di32cyi8axbfp" path="res://dialogues/tk.tres" id="5_7qc53"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="6_7qokd"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="7_8th8r"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="8_hipmr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vnord"]
 size = Vector2(20, 1082)
@@ -22,7 +28,17 @@ size = Vector2(1340, 423)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_foaj1"]
 size = Vector2(95.5, 300)
 
+[sub_resource type="RichTextEffect" id="RichTextEffect_viddb"]
+script = ExtResource("6_7qokd")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_t6k5x"]
+script = ExtResource("7_8th8r")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_ik7tl"]
+script = ExtResource("8_hipmr")
+
 [node name="TK" type="Node2D"]
+script = ExtResource("1_3v8r2")
 
 [node name="Border" type="StaticBody2D" parent="."]
 position = Vector2(0, 3)
@@ -82,3 +98,13 @@ offset_right = 406.0
 offset_bottom = 75.0
 theme_override_font_sizes/font_size = 40
 text = "Точка кипения"
+
+[node name="DialogueBox" type="Panel" parent="."]
+offset_left = 321.0
+offset_top = 842.0
+offset_right = 1450.0
+offset_bottom = 1065.0
+script = ExtResource("4_bm2cx")
+data = ExtResource("5_7qc53")
+start_id = "tk_start"
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_viddb"), SubResource("RichTextEffect_t6k5x"), SubResource("RichTextEffect_ik7tl")])
