@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b4ohcyv66dlei"]
 
-[ext_resource type="FontFile" uid="uid://svbsay6cx5dy" path="res://Assets/agat-8.ttf" id="1_2e2on"]
+[ext_resource type="FontFile" uid="uid://svbsay6cx5dy" path="res://MiniQuiz/Assets/agat-8.ttf" id="1_2e2on"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5mawc"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
