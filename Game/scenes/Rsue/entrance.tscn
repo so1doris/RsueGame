@@ -59,6 +59,9 @@ shape = SubResource("RectangleShape2D_b64tc")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Border"]
 polygon = PackedVector2Array(656, -26, 434, 424, 345, 383, 216, 614, 316, 652, 93, 1055, -75, 1064, -160, -12)
 
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Border"]
+polygon = PackedVector2Array(1371, 962, 1382, 938, 1384, 913, 1369, 887, 1350, 896, 1338, 902, 1305, 896, 1287, 893, 1288, 869, 1268, 848, 1252, 847, 1231, 848, 1198, 836, 1203, 827, 1185, 801, 1184, 781, 1181, 757, 1186, 740, 1211, 710, 1219, 690, 1222, 669, 1212, 645, 1208, 612, 1212, 587, 1230, 555, 1245, 525, 1282, 499, 1321, 475, 1350, 446, 1387, 423, 1424, 406, 1449, 400, 1522, 399, 1549, 408, 1579, 434, 1619, 458, 1634, 475, 1638, 501, 1637, 540, 1633, 589, 1639, 636, 1638, 676, 1625, 736, 1609, 766, 1566, 799, 1549, 843, 1479, 861, 1476, 878, 1479, 914, 1489, 923, 1510, 941, 1506, 961, 1481, 980, 1463, 982, 1435, 968, 1425, 958, 1415, 954, 1402, 968)
+
 [node name="New_scen" parent="." instance=ExtResource("3_cvgoj")]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="New_scen"]

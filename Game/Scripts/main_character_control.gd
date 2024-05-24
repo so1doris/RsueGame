@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # скорость движения
-@export var speed: float = 200.0
+@export var speed: float = 400.0
 
 func _physics_process(delta: float) -> void:	
 	var velocity = Vector2.ZERO
@@ -12,6 +12,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y += 1
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1
+		
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 
