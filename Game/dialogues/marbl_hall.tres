@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://cx384ntd5ibqk"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_gs1tv"]
+
+[resource]
+script = ExtResource("1_gs1tv")
+starts = {
+"marbl_start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-22, 263),
+"start_id": "marbl_start"
+},
+"1_1": {
+"dialogue": "Ваааау! Как тут красиво!",
+"offset": Vector2(343, 301),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Я (мысленно)"
+},
+"1_2": {
+"dialogue": "Тут у нас Мраморный зал, ну красота, согласись.",
+"offset": Vector2(730, 409),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(301, 240),
+"speaker": "Серов А. О."
+},
+"1_3": {
+"dialogue": "Да, впечатляет! Но почему фонтан не работает?",
+"offset": Vector2(1156, 367),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Я"
+},
+"1_4": {
+"dialogue": "Эх, действительно. Похоже, с фонтаном что-то не так. А ведь он так украшает зал.",
+"offset": Vector2(1673.57, 408),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+},
+"1_5": {
+"dialogue": "Может, его можно починить?",
+"offset": Vector2(2137.57, 445),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Я"
+},
+"1_6": {
+"dialogue": "Точно! Вспомнил, где-то здесь должна быть подсобка. Пойдем, поищем.",
+"offset": Vector2(2630.57, 490),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Пойдемте"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""
