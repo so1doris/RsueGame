@@ -127,7 +127,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300.001, 240),
 "speaker": "Щербаков С. М."
 },
 "1_17": {
@@ -247,7 +247,7 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": "END",
+"link": &"1_26",
 "text": "Конечно, идем!"
 }
 },
@@ -262,6 +262,32 @@ nodes = {
 "condition": {},
 "link": "END",
 "text": "Конечно!"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+},
+"1_26": {
+"dialogue": "*Звонит*",
+"offset": Vector2(1883.45, 1272.8),
+"options": {
+0: {
+"condition": {},
+"link": &"1_27",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Телефон Серова А. О."
+},
+"1_27": {
+"dialogue": "Мне нужно отойти ненадолго. Иди вперед, я догоню как только освобожусь.",
+"offset": Vector2(2345.45, 1314.6),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Хорошо"
 }
 },
 "size": Vector2(300, 240),
