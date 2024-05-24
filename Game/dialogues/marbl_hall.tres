@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_gs1tv")
 starts = {
+"marbl1_start": &"0_2",
 "marbl_start": &"0_1"
 }
 nodes = {
@@ -12,6 +13,11 @@ nodes = {
 "link": &"1_1",
 "offset": Vector2(-22, 263),
 "start_id": "marbl_start"
+},
+"0_2": {
+"link": &"1_7",
+"offset": Vector2(48.6001, 782.571),
+"start_id": "marbl1_start"
 },
 "1_1": {
 "dialogue": "Ваааау! Как тут красиво!",
@@ -75,7 +81,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300.001, 240),
 "speaker": "Я"
 },
 "1_6": {
@@ -90,6 +96,33 @@ nodes = {
 },
 "size": Vector2(300, 240),
 "speaker": "Серов А. О."
+},
+"1_7": {
+"dialogue": "Отличная работа, да ты мастер на все руки! Такие нужны нам на факультете.",
+"offset": Vector2(317.6, 812.571),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": "Спасибо!"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Серов А. О."
+},
+"1_8": {
+"dialogue": "**(Входит Лозина в Мраморный зал)**
+Так, всем срочно в Точку Кипения! Щербаков вот-вот начнет лекцию!",
+"offset": Vector2(795.6, 833.571),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Пойдемте"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Лозина Е. Н."
 }
 }
 variables = {}
