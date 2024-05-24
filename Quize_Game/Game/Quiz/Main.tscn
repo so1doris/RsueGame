@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cx6qxctugtl8d"]
+[gd_scene load_steps=14 format=3 uid="uid://cx6qxctugtl8d"]
 
 [ext_resource type="Script" path="res://Scripts/controller/game_controller.gd" id="1_j5j8p"]
 [ext_resource type="Resource" uid="uid://wbvxhjr01qv4" path="res://Resources/varied/theme_varied.tres" id="2_0kqyp"]
 [ext_resource type="FontFile" uid="uid://svbsay6cx5dy" path="res://Assets/agat-8.ttf" id="3_4ogeh"]
+[ext_resource type="FontFile" uid="uid://ct8qhxqrwcqwr" path="res://Assets/Fifaks10Dev1.ttf" id="3_vvagh"]
 [ext_resource type="AudioStream" uid="uid://j4o0wbal8yeu" path="res://Assets/Sounds/correcto-tinki.mp3" id="4_76xf1"]
 [ext_resource type="AudioStream" uid="uid://bd63eohgs1c6i" path="res://Assets/Sounds/windows-xp-critical-error-full-version.mp3" id="5_lsjmu"]
 
@@ -86,7 +87,7 @@ grow_horizontal = 2
 [node name="QuestionText" type="Label" parent="Content/QuestionInfo"]
 custom_minimum_size = Vector2(1150, 70)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 43
 text = "
 Some text(Question)
@@ -115,7 +116,7 @@ theme_override_constants/separation = 20
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
 theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
@@ -124,7 +125,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
 theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
@@ -133,7 +134,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
 theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
@@ -142,7 +143,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_ge7vi")
 theme_override_styles/hover = SubResource("StyleBoxFlat_37e7c")
@@ -249,33 +250,34 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 68.0
+offset_right = -3.0
 offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
-theme_override_constants/separation = 60
+theme_override_constants/separation = 80
 
 [node name="Label" type="Label" parent="Content/StartScreen/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_4ogeh")
+theme_override_fonts/font = ExtResource("3_vvagh")
 theme_override_font_sizes/font_size = 35
-text = "
-
-
-Дорогой абитуриент, тебе предлагается пройти веселый Квиз! 
+text = "Дорогой абитуриент, тебе предлагается пройти веселый Квиз! 
 Будет 10 вопросов, в каждом 4 варианта ответа,
 и только один из них будет правильный.
-
-
-
-
-
-Если ты готов, то мы начинаем! 
-
-
 "
 horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Content/StartScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vvagh")
+theme_override_font_sizes/font_size = 33
+text = "Если ты готов, то мы начинаем! "
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="Content/StartScreen/VBoxContainer"]
 layout_mode = 2

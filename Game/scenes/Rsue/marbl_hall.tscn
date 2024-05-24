@@ -93,6 +93,7 @@ theme_override_font_sizes/font_size = 40
 text = "Мраморка"
 
 [node name="DialogueBox" type="Panel" parent="."]
+visible = false
 offset_left = 393.0
 offset_top = 876.0
 offset_right = 1586.0

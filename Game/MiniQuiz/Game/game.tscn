@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bg0cjmpscc5m3"]
 
-[ext_resource type="PackedScene" uid="uid://b4ohcyv66dlei" path="res://Game/Start/Start.tscn" id="1_6r1ur"]
+[ext_resource type="PackedScene" uid="uid://b4ohcyv66dlei" path="res://MiniQuiz/Game/Start/Start.tscn" id="1_6r1ur"]
 
 [node name="Game" type="Control"]
 layout_mode = 3

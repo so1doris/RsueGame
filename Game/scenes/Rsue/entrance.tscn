@@ -81,6 +81,7 @@ theme_override_font_sizes/font_size = 40
 text = "Вход в РИНХ"
 
 [node name="DialogueBox" type="Panel" parent="."]
+visible = false
 offset_left = 238.0
 offset_top = 771.0
 offset_right = 1645.0

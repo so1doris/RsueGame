@@ -95,6 +95,7 @@ theme_override_font_sizes/font_size = 40
 text = "Турникет и охранники"
 
 [node name="DialogueBox" type="Panel" parent="."]
+visible = false
 offset_left = 388.0
 offset_top = 731.0
 offset_right = 1449.0
