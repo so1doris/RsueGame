@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://bagblx8kdd4nd"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_sx15k"]
+
+[resource]
+script = ExtResource("1_sx15k")
+question_info = "Как называют секрет, заложенный создателями в ПО?"
+type = 0
+options = Array[String](["Оладушка", "Колядка", "Сырок", "Пасхалка"])
+correct = "Пасхалка"

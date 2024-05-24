@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ct8qhxqrwcqwr"
-path="res://.godot/imported/Fifaks10Dev1.ttf-7bf3cdb3cb3418071f5fa77681639d8b.fontdata"
+path="res://.godot/imported/Fifaks10Dev1.ttf-1c42a8b94e943a348a0bd128f8a3d5d3.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fifaks10Dev1.ttf"
-dest_files=["res://.godot/imported/Fifaks10Dev1.ttf-7bf3cdb3cb3418071f5fa77681639d8b.fontdata"]
+source_file="res://MiniQuiz/Assets/Fifaks10Dev1.ttf"
+dest_files=["res://.godot/imported/Fifaks10Dev1.ttf-1c42a8b94e943a348a0bd128f8a3d5d3.fontdata"]
 
 [params]
 
