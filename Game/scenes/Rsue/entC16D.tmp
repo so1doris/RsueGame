@@ -91,6 +91,8 @@ custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_2camv"), Sub
 [node name="CharacterBody2D2" parent="." instance=ExtResource("10_d40cy")]
 position = Vector2(654, 3)
 scale = Vector2(2, 2)
+speed = null
+target = null
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_3fxka")]
 position = Vector2(966, 335)

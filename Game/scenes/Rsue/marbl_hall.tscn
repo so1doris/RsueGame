@@ -83,6 +83,7 @@ shape = SubResource("RectangleShape2D_e35ul")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_ibqkv")]
 position = Vector2(1093, 85)
+scale = Vector2(3, 3)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 37.0
