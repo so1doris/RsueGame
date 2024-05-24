@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="6_4ym3r"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="7_fwh1k"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="8_6mfpb"]
-[ext_resource type="PackedScene" uid="uid://hx0gcpd2fddp" path="res://Сharacters/Serov.tscn" id="10_d40cy"]
+[ext_resource type="PackedScene" path="res://Сharacters/Serov.tscn" id="10_d40cy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnm4"]
 size = Vector2(20, 1080)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dkp040ocq62dx"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_4jokf"]
+
+[resource]
+script = ExtResource("1_4jokf")
+question_info = "\"Мозг\" компьютера"
+type = 0
+options = Array[String](["Видеокарта", "Системник", "Процессор", "Накопитель"])
+correct = "Процессор"
