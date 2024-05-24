@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://ctiqlmtdqv2w4"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_hmsu4"]
+
+[resource]
+script = ExtResource("1_hmsu4")
+question_info = "Что является логотипом браузера Firefox?"
+type = 0
+options = Array[String](["Огненная лиса", "Малая панда", "Феникс", "Феник"])
+correct = "Малая панда"

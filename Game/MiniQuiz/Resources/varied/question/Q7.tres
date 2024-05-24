@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://xago8l0h5myr"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/Question.gd" id="1_2c671"]
+
+[resource]
+script = ExtResource("1_2c671")
+question_info = "Мотылек замкнул крылышками контакты. Какое слово появилось по этому случаю?"
+type = 0
+options = Array[String](["Error", "Bug", "Breakdown", "Mistake"])
+correct = "Bug"
