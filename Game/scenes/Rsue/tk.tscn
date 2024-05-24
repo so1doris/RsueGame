@@ -1,7 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://dnf1pehbqapoo"]
+[gd_scene load_steps=17 format=3 uid="uid://dnf1pehbqapoo"]
 
 [ext_resource type="Script" path="res://tk.gd" id="1_3v8r2"]
-[ext_resource type="Texture2D" uid="uid://ckm2bbk30n1px" path="res://icon.svg" id="1_d2bsp"]
+[ext_resource type="Texture2D" uid="uid://7v8w5nupolp4" path="res://Sprites/Location/TK.jpeg" id="2_tiqrs"]
 [ext_resource type="PackedScene" uid="uid://c7epwy41ehfwe" path="res://scenes/Rsue/Move_to_scen/to_2_floor.tscn" id="3_jot2s"]
 [ext_resource type="PackedScene" uid="uid://des5dnpsqjkwy" path="res://Сharacters/Серов.tscn" id="3_ncnuw"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_bm2cx"]
@@ -17,16 +17,10 @@ size = Vector2(20, 1082)
 size = Vector2(561.5, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3tc3l"]
-size = Vector2(1346, 221.25)
+size = Vector2(1894, 421.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i5cmj"]
 size = Vector2(566, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7cor"]
-size = Vector2(1340, 423)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_foaj1"]
-size = Vector2(95.5, 300)
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_viddb"]
 script = ExtResource("6_7qokd")
@@ -39,6 +33,12 @@ script = ExtResource("8_hipmr")
 
 [node name="TK" type="Node2D"]
 script = ExtResource("1_3v8r2")
+
+[node name="Tk" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(962.75, 529.5)
+scale = Vector2(24.0063, 17.0156)
+texture = ExtResource("2_tiqrs")
 
 [node name="Border" type="StaticBody2D" parent="."]
 position = Vector2(0, 3)
@@ -56,50 +56,31 @@ position = Vector2(282.25, -5)
 shape = SubResource("RectangleShape2D_wp6pr")
 
 [node name="Wall" type="CollisionShape2D" parent="Border"]
-position = Vector2(1238, 104.375)
+position = Vector2(964, 204.375)
 shape = SubResource("RectangleShape2D_3tc3l")
 
 [node name="Bottom" type="CollisionShape2D" parent="Border"]
 position = Vector2(280, 1071)
 shape = SubResource("RectangleShape2D_i5cmj")
 
-[node name="Seats" type="CollisionShape2D" parent="Border"]
-position = Vector2(1237, 861.5)
-shape = SubResource("RectangleShape2D_l7cor")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Border"]
+polygon = PackedVector2Array(646, 1059, 651, 903, 790, 902, 795, 845, 981, 845, 990, 769, 1924, 746, 1924, 1059)
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(794, 798)
-texture = ExtResource("1_d2bsp")
-
-[node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(1046, 795)
-texture = ExtResource("1_d2bsp")
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Border"]
+polygon = PackedVector2Array(1894, 446, 1776, 438, 1663, 442, 1587, 454, 1568, 481, 1578, 503, 1609, 510, 1649, 513, 1689, 522, 1744, 522, 1746, 572, 1741, 627, 1917, 627, 2003, 513)
 
 [node name="to_2floor" parent="." instance=ExtResource("3_jot2s")]
 collision_mask = 2
 
-[node name="ColorRect" type="ColorRect" parent="to_2floor"]
-offset_left = 16.0
-offset_top = 3.0
-offset_right = 94.0
-offset_bottom = 303.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="to_2floor"]
-position = Vector2(53, 158)
-shape = SubResource("RectangleShape2D_foaj1")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="to_2floor"]
+polygon = PackedVector2Array(20, 711, 368, 1062, 13, 1065, 8, 706)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_ncnuw")]
-position = Vector2(292, 115)
-
-[node name="Label" type="Label" parent="."]
-offset_left = 104.0
-offset_top = 16.0
-offset_right = 406.0
-offset_bottom = 75.0
-theme_override_font_sizes/font_size = 40
-text = "Точка кипения"
+position = Vector2(674, 655)
+scale = Vector2(3, 3)
 
 [node name="DialogueBox" type="Panel" parent="."]
+visible = false
 offset_left = 321.0
 offset_top = 842.0
 offset_right = 1450.0

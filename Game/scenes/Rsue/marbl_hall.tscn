@@ -83,6 +83,7 @@ shape = SubResource("RectangleShape2D_e35ul")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_ibqkv")]
 position = Vector2(1093, 85)
+scale = Vector2(3, 3)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 37.0
@@ -93,6 +94,7 @@ theme_override_font_sizes/font_size = 40
 text = "Мраморка"
 
 [node name="DialogueBox" type="Panel" parent="."]
+visible = false
 offset_left = 393.0
 offset_top = 876.0
 offset_right = 1586.0
