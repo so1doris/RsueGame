@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds20xi6widlho"
-path="res://.godot/imported/button UI.png-60ce7cd3d21d887d999d3c7daee212fd.ctex"
+uid="uid://cfx3l2fjuckuk"
+path="res://.godot/imported/Mrable1.jpeg-8c7920b68f8311c6aa69ffcab8c98b0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MiniQuiz/Assets/button UI.png"
-dest_files=["res://.godot/imported/button UI.png-60ce7cd3d21d887d999d3c7daee212fd.ctex"]
+source_file="res://Sprites/Location/Mrable1.jpeg"
+dest_files=["res://.godot/imported/Mrable1.jpeg-8c7920b68f8311c6aa69ffcab8c98b0c.ctex"]
 
 [params]
 

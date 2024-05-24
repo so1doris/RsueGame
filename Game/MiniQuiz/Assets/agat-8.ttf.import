@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://svbsay6cx5dy"
-path="res://.godot/imported/agat-8.ttf-ecd45892d0e614b679cabea918f99b5c.fontdata"
+path="res://.godot/imported/agat-8.ttf-e9930df6d10b3d018c1fabfe286bbfad.fontdata"
 
 [deps]
 
-source_file="res://Assets/agat-8.ttf"
-dest_files=["res://.godot/imported/agat-8.ttf-ecd45892d0e614b679cabea918f99b5c.fontdata"]
+source_file="res://MiniQuiz/Assets/agat-8.ttf"
+dest_files=["res://.godot/imported/agat-8.ttf-e9930df6d10b3d018c1fabfe286bbfad.fontdata"]
 
 [params]
 
